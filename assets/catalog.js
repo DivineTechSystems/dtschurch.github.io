@@ -106,6 +106,17 @@ window.DTS_CATALOG = [
     ]
   },
   {
+    name: "AI Compass",
+    href: "/projects/ai-compass/",
+    group: "Church Guides",
+    desc: "For churches writing AI guidelines with DTS. How Church Admins run the staff assessment, and what staff need to know when they get the email.",
+    badges: ["Church Admin", "Staff"],
+    showInNav: true,
+    showInCatalog: true,
+    searchable: true,
+    featured: false
+  },
+  {
     name: "Mailgun Toolbox",
     href: "/projects/mailgun-toolbox/",
     group: "Rock Plugins",
