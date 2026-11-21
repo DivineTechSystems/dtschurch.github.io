@@ -1,0 +1,201 @@
+{
+  "capturedAt": null,
+  "sourceSystem": "local AI Compass with the development database (never production)",
+  "testData": "church \"Grace Fellowship (test)\" only; made-up staff such as \"Pat Example\" with example.com addresses",
+  "writePolicy": "test user, people, invites and responses created for the capture are removed afterwards; no real email is sent",
+  "note": "Shell: no captures yet. Each entry matches a placeholder figure (data-shot) in the pages. A later run replaces each placeholder with the image and fills in processing.",
+  "images": [
+    {
+      "file": "home.png",
+      "page": "index.html",
+      "screen": "Home",
+      "shows": "Home shows your church’s assessment: whether it is open, what to do next (for example Add your staff or Send the link), and how many people are on the list and have answered.",
+      "viewport": "1280 px wide",
+      "status": "planned"
+    },
+    {
+      "file": "sign-in.png",
+      "page": "church-admin.html",
+      "screen": "Sign-in page",
+      "shows": "The sign-in page says “Sign in to manage your church’s staff assessment”, with the Email and Password boxes and the Sign in button.",
+      "viewport": "1280 px wide",
+      "status": "planned"
+    },
+    {
+      "file": "portal-menu.png",
+      "page": "church-admin.html",
+      "screen": "Left menu with account menu open",
+      "shows": "The menu: Home, Staff list, Results and Questions, with the account menu open at the bottom showing Change password and Sign out.",
+      "viewport": "1280 px wide",
+      "status": "planned"
+    },
+    {
+      "file": "staff-list.png",
+      "page": "staff-list.html",
+      "screen": "Staff list, People section",
+      "shows": "The People section: the buttons Add a person, Add from a file and Edit the email, then each person’s name, email and status (Not sent, Link sent or Answered).",
+      "viewport": "1280 px wide",
+      "status": "planned"
+    },
+    {
+      "file": "add-person.png",
+      "page": "staff-list.html",
+      "screen": "Staff list > Add a person",
+      "shows": "The Add a person box, with Name and Email filled in for a made-up person, and the Add person button.",
+      "viewport": "1280 px wide",
+      "status": "planned"
+    },
+    {
+      "file": "import-file.png",
+      "page": "staff-list.html",
+      "screen": "Staff list > Add from a file (first step)",
+      "shows": "Add people from a file: the example table, the Download an example file link, the Choose a file button and the paste box.",
+      "viewport": "1280 px wide",
+      "status": "planned"
+    },
+    {
+      "file": "import-check.png",
+      "page": "staff-list.html",
+      "screen": "Staff list > Add from a file (row check)",
+      "shows": "After the file is read: a summary line, then each row marked Will be added, Already on the list or Cannot be added (with the reason), and the Add button.",
+      "viewport": "1280 px wide",
+      "status": "planned"
+    },
+    {
+      "file": "edit-person.png",
+      "page": "staff-list.html",
+      "screen": "Staff list > Edit person",
+      "shows": "Editing a person: Name, Email, and the On the list tick box that takes them off the list when unticked.",
+      "viewport": "1280 px wide",
+      "status": "planned"
+    },
+    {
+      "file": "questions.png",
+      "page": "questions.html",
+      "screen": "Questions (not open yet)",
+      "shows": "The Questions page while the assessment is not open yet: the note about what you can change, the Preview as staff see it button, and a section of questions each with an Edit button.",
+      "viewport": "1280 px wide",
+      "status": "planned"
+    },
+    {
+      "file": "question-edit.png",
+      "page": "questions.html",
+      "screen": "Questions > Edit question (standard question)",
+      "shows": "Editing a standard question: Question, Helper line, How people answer (greyed out, “Set by DTS”), the choices, the two Options tick boxes and Save question.",
+      "viewport": "1280 px wide",
+      "status": "planned"
+    },
+    {
+      "file": "own-question.png",
+      "page": "questions.html",
+      "screen": "Questions > Add a question",
+      "shows": "Adding your own question: the note that it goes at the end, then Question, Helper line, How people answer, the choices and Add question.",
+      "viewport": "1280 px wide",
+      "status": "planned"
+    },
+    {
+      "file": "questions-locked.png",
+      "page": "questions.html",
+      "screen": "Questions (after opening)",
+      "shows": "After opening: the note that the questions are fixed, the Open the assessment page button, and no Edit buttons.",
+      "viewport": "1280 px wide",
+      "status": "planned"
+    },
+    {
+      "file": "open-assessment.png",
+      "page": "sending.html",
+      "screen": "Staff list, status box (not open yet)",
+      "shows": "“The assessment is not open yet”, with the Open the assessment button and the note that DTS sets whether it is anonymous.",
+      "viewport": "1280 px wide",
+      "status": "planned"
+    },
+    {
+      "file": "status-open-link.png",
+      "page": "sending.html",
+      "screen": "Staff list, status box (open)",
+      "shows": "“The assessment is open”: Your church’s link with the Copy link button, and the Close the assessment button.",
+      "viewport": "1280 px wide",
+      "status": "planned"
+    },
+    {
+      "file": "edit-email.png",
+      "page": "sending.html",
+      "screen": "Staff list > Edit the email",
+      "shows": "The email box: Subject, Message, the “Added every time” part (the privacy sentence, the button and the footer), and the Use the standard wording, Send me a test and Save buttons.",
+      "viewport": "1280 px wide",
+      "status": "planned"
+    },
+    {
+      "file": "send-pending.png",
+      "page": "sending.html",
+      "screen": "Staff list, People section (open)",
+      "shows": "The People section once the assessment is open: the Email the N not yet sent it button, and rows marked Not sent and Link sent, each with a Send or Send again button.",
+      "viewport": "1280 px wide",
+      "status": "planned"
+    },
+    {
+      "file": "get-link.png",
+      "page": "sending.html",
+      "screen": "Staff list > Get link (tracked)",
+      "shows": "A personal link for a made-up person, with the note that it works once and is shown this one time, and the Copy link and Done buttons.",
+      "viewport": "1280 px wide",
+      "status": "planned"
+    },
+    {
+      "file": "status-closed.png",
+      "page": "sending.html",
+      "screen": "Staff list, status box (closed)",
+      "shows": "“The assessment is closed”: the note that the link shows a closed message and answers are kept, and the Reopen the assessment button.",
+      "viewport": "1280 px wide",
+      "status": "planned"
+    },
+    {
+      "file": "results.png",
+      "page": "results.html",
+      "screen": "Results, Everyone together",
+      "shows": "Everyone together: the number of responses, the Show answers from list, and a question’s bars with counts and percentages.",
+      "viewport": "1280 px wide",
+      "status": "planned"
+    },
+    {
+      "file": "results-each.png",
+      "page": "results.html",
+      "screen": "Results, By person / Each response",
+      "shows": "One response at a time: the list of responses, with one opened to show its answers under each section.",
+      "viewport": "1280 px wide",
+      "status": "planned"
+    },
+    {
+      "file": "staff-survey-phone.png",
+      "page": "staff.html",
+      "screen": "Public assessment page",
+      "shows": "The assessment on a phone: the church’s name and “3 of 23 answered” at the top, and a question with its choices.",
+      "viewport": "390 px wide (phone)",
+      "status": "planned"
+    },
+    {
+      "file": "staff-done-phone.png",
+      "page": "staff.html",
+      "screen": "Public assessment, Answers sent",
+      "shows": "After sending: the Answers sent page with the church’s thank-you message.",
+      "viewport": "390 px wide (phone)",
+      "status": "planned"
+    },
+    {
+      "file": "staff-closed-phone.png",
+      "page": "help.html",
+      "screen": "Public assessment, closed",
+      "shows": "What a link shows once the assessment is closed: “This survey has closed. Thank you for your interest.”",
+      "viewport": "390 px wide (phone)",
+      "status": "planned"
+    },
+    {
+      "file": "staff-link-request-phone.png",
+      "page": "help.html",
+      "screen": "Public church link of a tracked assessment",
+      "shows": "The church link of a tracked assessment: a box for Your email address and the Send my link button.",
+      "viewport": "390 px wide (phone)",
+      "status": "planned"
+    }
+  ]
+}

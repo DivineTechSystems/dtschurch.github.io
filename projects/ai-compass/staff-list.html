@@ -1,0 +1,188 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Staff list | AI Compass | DTS Dev Docs</title>
+    <meta name="description" content="Add the people who take the AI Compass staff assessment, one at a time or from a file, and change or remove them." />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,700&amp;family=Work+Sans:wght@400;500;600;700&amp;display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="../../assets/styles.css" />
+  </head>
+  <body>
+    <div class="site-bg" aria-hidden="true">
+      <div class="glow glow-a"></div><div class="glow glow-b"></div><div class="grid-overlay"></div>
+    </div>
+    <header id="site-header"></header>
+    <main class="page docs-shell">
+      <aside class="docs-nav reveal">
+        <h2>AI Compass</h2>
+        <a href="./">Overview</a>
+        <a href="church-admin.html">For Church Admins</a>
+        <a href="staff-list.html">Staff list</a>
+        <a href="questions.html">Questions</a>
+        <a href="sending.html">Sending and reminders</a>
+        <a href="results.html">Results</a>
+        <a href="staff.html">For staff</a>
+        <a href="help.html">Questions and help</a>
+        <div class="docs-page-toc">
+          <p class="docs-subnav-label">On This Page</p>
+          <nav class="docs-page-toc-links" data-page-toc aria-label="On this page"></nav>
+        </div>
+      </aside>
+      <div class="docs-main">
+        <section class="panel reveal">
+          <p class="eyebrow">AI Compass · Church Admins</p>
+          <h1>Staff list</h1>
+          <p class="panel-intro">The staff list is everyone who should take the assessment. Each person needs only a name and an email address. They need no account or password: each one gets a link by email.</p>
+          <p>Open it from <strong>Staff list</strong> in the menu on the left. The people are in the <strong>People</strong> section, under the box that says whether the assessment is open. You can add and change people whether the assessment is open or not.</p>
+          <figure class="doc-figure">
+            <div class="screenshot-placeholder" data-shot="staff-list.png">
+              <strong>Screenshot to come: staff-list.png</strong>
+              The Staff list page with a few made-up people.
+            </div>
+            <figcaption>The People section: the buttons Add a person, Add from a file and Edit the email, then each person’s name, email and status (Not sent, Link sent or Answered).</figcaption>
+          </figure>
+        </section>
+
+        <section class="panel reveal" id="add-one">
+          <h2>Add one person</h2>
+          <ol>
+            <li>In <strong>People</strong>, press <strong>Add a person</strong>.</li>
+            <li>Type their <strong>Name</strong> and <strong>Email</strong>.</li>
+            <li>Press <strong>Add person</strong>. You see “Saved”, and they appear on the list as <strong>Not sent</strong>.</li>
+          </ol>
+          <p>Nothing is emailed when you add someone. You send the link later, from the same page (see <a href="sending.html#send">Sending the link</a>).</p>
+          <figure class="doc-figure">
+            <div class="screenshot-placeholder" data-shot="add-person.png">
+              <strong>Screenshot to come: add-person.png</strong>
+              The “Add a person” box.
+            </div>
+            <figcaption>The Add a person box, with Name and Email filled in for a made-up person, and the Add person button.</figcaption>
+          </figure>
+          <p>If you see “That email address is already on the list.”, that person is already there (perhaps under another name, or among the removed people; see <a href="#remove">Taking someone off the list</a>).</p>
+        </section>
+
+        <section class="panel reveal" id="from-a-file">
+          <h2>Add many people from a file</h2>
+          <p>If you have your staff in a spreadsheet, save it as a CSV file and add everyone at once.</p>
+          <h3>What the file needs</h3>
+          <p>One person on each row: their name, then their email address.</p>
+          <div class="table-wrap">
+            <table>
+              <thead><tr><th>Name</th><th>Email</th></tr></thead>
+              <tbody>
+                <tr><td>Pat Example</td><td>pat@example.com</td></tr>
+                <tr><td>Sam Sample</td><td>sam@example.com</td></tr>
+              </tbody>
+            </table>
+          </div>
+          <ul>
+            <li>A heading row is optional.</li>
+            <li>Separate <strong>First Name</strong> and <strong>Last Name</strong> columns work too.</li>
+            <li>Other columns (phone, role and so on) are ignored, and the columns can be in any order if there is a heading row.</li>
+            <li>Commas, semicolons or tabs between columns all work.</li>
+            <li>An Excel workbook (.xlsx) will not work. In Excel choose <strong>File</strong>, <strong>Save As</strong>, pick “CSV (Comma delimited)”, and use the file it saves.</li>
+            <li>A file can have up to 2,000 rows, and a list holds up to 500 people.</li>
+          </ul>
+          <p>Inside the app, <strong>Download an example file</strong> gives you a file to fill in.</p>
+
+          <h3>Steps</h3>
+          <ol>
+            <li>In <strong>People</strong>, press <strong>Add from a file</strong>.</li>
+            <li>Press <strong>Choose a file</strong> and pick your CSV file. Or paste the list into the box under “Or paste the list here” and press <strong>Check the list</strong>.</li>
+            <li>AI Compass reads the file and shows you, row by row, what will happen. Nobody is added yet.</li>
+            <li>Look over the rows. Rows that cannot be added are shown first, with the reason.</li>
+            <li>Press <strong>Add <em>N</em> people</strong>. You see “Added <em>N</em> people to the list”. Press <strong>Back</strong> instead if you want to fix the file first.</li>
+          </ol>
+          <p>Nothing is emailed yet. You send the assessment from the list afterwards.</p>
+          <figure class="doc-figure">
+            <div class="screenshot-placeholder" data-shot="import-file.png">
+              <strong>Screenshot to come: import-file.png</strong>
+              The “Add people from a file” box, before a file is chosen.
+            </div>
+            <figcaption>Add people from a file: the example table, the Download an example file link, the Choose a file button and the paste box.</figcaption>
+          </figure>
+          <figure class="doc-figure">
+            <div class="screenshot-placeholder" data-shot="import-check.png">
+              <strong>Screenshot to come: import-check.png</strong>
+              The row-by-row check after a file is read.
+            </div>
+            <figcaption>After the file is read: a summary line, then each row marked Will be added, Already on the list or Cannot be added (with the reason), and the Add button.</figcaption>
+          </figure>
+
+          <h3>What each row can say</h3>
+          <div class="table-wrap">
+            <table>
+              <thead><tr><th>Row says</th><th>What it means</th></tr></thead>
+              <tbody>
+                <tr><td>Will be added</td><td>A new person. They go on the list.</td></tr>
+                <tr><td>Goes back on the list</td><td>Someone you took off the list earlier. They go back on.</td></tr>
+                <tr><td>Already on the list</td><td>That email address is already there. Nothing changes for them, so adding the same file twice is safe.</td></tr>
+                <tr><td>No email address</td><td>The row has no email address. It is skipped.</td></tr>
+                <tr><td>The email address does not look right</td><td>Probably a typo. It is skipped; fix it in the file or add the person by hand.</td></tr>
+                <tr><td>No name</td><td>The row has an email address but no name. It is skipped.</td></tr>
+                <tr><td>The name is too long</td><td>Over 200 characters. It is skipped.</td></tr>
+                <tr><td>This address is in the file more than once</td><td>A repeat of an earlier row. Only the first one is used.</td></tr>
+              </tbody>
+            </table>
+          </div>
+          <p>If the whole file cannot be used, you see one of these instead: “No people were found in that file. It needs a name and an email address on each row.”, “That file has more than 2000 rows.”, or “A list holds up to 500 people, and this file would take it past that.”</p>
+        </section>
+
+        <section class="panel reveal" id="edit">
+          <h2>Changing someone’s name or email</h2>
+          <ol>
+            <li>Find the person on the list and press <strong>Edit</strong> on their row.</li>
+            <li>Change their <strong>Name</strong> or <strong>Email</strong>.</li>
+            <li>Press <strong>Save</strong>.</li>
+          </ol>
+          <p>If you change someone’s email address, any link sent to the old address stops working. Send them the link again so it goes to the new address.</p>
+        </section>
+
+        <section class="panel reveal" id="remove">
+          <h2>Taking someone off the list</h2>
+          <p>Use this when someone has left, or was added by mistake.</p>
+          <ol>
+            <li>Press <strong>Edit</strong> on their row.</li>
+            <li>Untick <strong>On the list</strong>.</li>
+            <li>Press <strong>Save</strong>.</li>
+          </ol>
+          <p>They get no more links, and a personal link they already have stops working. Anything they already answered stays in the results.</p>
+          <figure class="doc-figure">
+            <div class="screenshot-placeholder" data-shot="edit-person.png">
+              <strong>Screenshot to come: edit-person.png</strong>
+              The Edit box for a made-up person, with the “On the list” tick box.
+            </div>
+            <figcaption>Editing a person: Name, Email, and the On the list tick box that takes them off the list when unticked.</figcaption>
+          </figure>
+          <h3>Putting someone back</h3>
+          <p>People you have taken off are listed under <strong>Show <em>N</em> removed people</strong> below the list.</p>
+          <ol>
+            <li>Press <strong>Show <em>N</em> removed people</strong>.</li>
+            <li>Press <strong>Edit</strong> next to the person.</li>
+            <li>Tick <strong>On the list</strong> and press <strong>Save</strong>.</li>
+          </ol>
+          <p>Adding them again from a file also puts them back.</p>
+        </section>
+
+        <section class="panel reveal" id="statuses">
+          <h2>What the status column means</h2>
+          <div class="table-wrap">
+            <table>
+              <thead><tr><th>Status</th><th>Meaning</th></tr></thead>
+              <tbody>
+                <tr><td><strong>Not sent</strong></td><td>They have not been emailed the link yet.</td></tr>
+                <tr><td><strong>Link sent</strong></td><td>They were emailed the link, and when.</td></tr>
+                <tr><td><strong>Answered</strong></td><td>Tracked assessments only: they have sent their answers, and on what day. An anonymous assessment never shows who answered.</td></tr>
+              </tbody>
+            </table>
+          </div>
+          <p>Above the list, a line counts the people on the list, how many were sent the link, and (for a tracked assessment) how many have answered. See <a href="sending.html#anonymous-or-tracked">Anonymous or tracked</a> for the difference.</p>
+        </section>
+      </div>
+    </main>
+    <script src="../../assets/catalog.js"></script><script src="../../assets/nav.js"></script><script src="../../assets/site.js"></script>
+  </body>
+</html>

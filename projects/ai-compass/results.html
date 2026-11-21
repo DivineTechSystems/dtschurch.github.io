@@ -1,0 +1,99 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Results | AI Compass | DTS Dev Docs</title>
+    <meta name="description" content="Read what your staff said in the AI Compass staff assessment, together or one response at a time." />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,700&amp;family=Work+Sans:wght@400;500;600;700&amp;display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="../../assets/styles.css" />
+  </head>
+  <body>
+    <div class="site-bg" aria-hidden="true">
+      <div class="glow glow-a"></div><div class="glow glow-b"></div><div class="grid-overlay"></div>
+    </div>
+    <header id="site-header"></header>
+    <main class="page docs-shell">
+      <aside class="docs-nav reveal">
+        <h2>AI Compass</h2>
+        <a href="./">Overview</a>
+        <a href="church-admin.html">For Church Admins</a>
+        <a href="staff-list.html">Staff list</a>
+        <a href="questions.html">Questions</a>
+        <a href="sending.html">Sending and reminders</a>
+        <a href="results.html">Results</a>
+        <a href="staff.html">For staff</a>
+        <a href="help.html">Questions and help</a>
+        <div class="docs-page-toc">
+          <p class="docs-subnav-label">On This Page</p>
+          <nav class="docs-page-toc-links" data-page-toc aria-label="On this page"></nav>
+        </div>
+      </aside>
+      <div class="docs-main">
+        <!-- TODO: this page follows uncommitted app changes of 2026-11-21: results show from the first response (no minimum of five), with "Everyone together" and "By person" / "Each response" views. The committed app still waits for five responses and shows combined results only. Re-check against the app before publishing. -->
+        <section class="panel reveal">
+          <p class="eyebrow">AI Compass · Church Admins</p>
+          <h1>Results</h1>
+          <p class="panel-intro">Open <strong>Results</strong> in the menu on the left to see what your staff said. Answers show up as they come in, from the first one. Reload the page to see the newest.</p>
+          <p>At the top of the page, pick how to look at them:</p>
+          <ul>
+            <li><strong>Everyone together</strong>: all the answers added up, question by question.</li>
+            <li><strong>By person</strong> (tracked assessment) or <strong>Each response</strong> (anonymous assessment): one person’s answers at a time.</li>
+          </ul>
+          <p>Until someone answers, the page says “No one has answered yet. Results show up here as people send their answers.” Results stay here after you close the assessment.</p>
+        </section>
+
+        <section class="panel reveal" id="together">
+          <h2>Everyone together</h2>
+          <p>The top line says how many responses there are and the day the latest one came in. No names are shown with answers in this view. Under it, each section of the assessment is listed with its questions:</p>
+          <div class="table-wrap">
+            <table>
+              <thead><tr><th>Kind of question</th><th>What you see</th></tr></thead>
+              <tbody>
+                <tr><td>Pick one, Pick any</td><td>A bar for each choice, with how many picked it and the percentage. For Pick any, people could pick several, so the numbers add up to more than the people who answered. What people typed under “Other” is listed under the bars.</td></tr>
+                <tr><td>Scale of 1 to 5</td><td>The average out of 5, and a bar for each number from 1 to 5.</td></tr>
+                <tr><td>Written answer</td><td>Every answer, word for word. The first eight are shown; press <strong>Show all</strong> for the rest.</td></tr>
+              </tbody>
+            </table>
+          </div>
+          <p>Each question also says how many people answered it (for example “12 of 15 answered”), because not every question is required.</p>
+          <h3>Show answers from</h3>
+          <p>Use <strong>Show answers from</strong> at the top to see only some people’s answers, for example only staff in one role, or only people who gave one answer to “How often do you use AI tools”. Pick <strong>Everyone</strong> to go back to all of them. The top line then says how many responses match, such as “6 of 15 responses”.</p>
+          <figure class="doc-figure">
+            <div class="screenshot-placeholder" data-shot="results.png">
+              <strong>Screenshot to come: results.png</strong>
+              The Results page, Everyone together, with made-up answers.
+            </div>
+            <figcaption>Everyone together: the number of responses, the Show answers from list, and a question’s bars with counts and percentages.</figcaption>
+          </figure>
+        </section>
+
+        <section class="panel reveal" id="each">
+          <h2>One response at a time</h2>
+          <p><strong>Tracked assessment (By person):</strong> the page says how many people have answered and lists them by name. Press a name to open that person’s answers, section by section.</p>
+          <p><strong>Anonymous assessment (Each response):</strong> the responses are numbered (Response 1, Response 2, …) in no particular order, with no names. Each one is one person’s answers. The numbers do not tell you who answered first.</p>
+          <p>Under a question, “No answer” means the person skipped it.</p>
+          <figure class="doc-figure">
+            <div class="screenshot-placeholder" data-shot="results-each.png">
+              <strong>Screenshot to come: results-each.png</strong>
+              The Results page, one response at a time, with one response opened.
+            </div>
+            <figcaption>One response at a time: the list of responses, with one opened to show its answers under each section.</figcaption>
+          </figure>
+          <div class="callout callout-warm">
+            <p><strong>Handle answers with care.</strong> Staff were told how their answers would be used. In an anonymous assessment, please do not try to work out who wrote what, even when you think you can tell. Answers that people feel safe giving are what make the guidelines useful.</p>
+          </div>
+        </section>
+
+        <section class="panel reveal" id="next">
+          <h2>What happens next</h2>
+          <p>DTS sees the same answers. DTS puts them together with what your leaders said in their conversations with DTS and drafts your church’s AI guidelines with you. You do not need to export or send anything.</p>
+          <p>If you want to talk about what the results mean for your church, speak to the DTS person working with you.</p>
+        </section>
+      </div>
+    </main>
+    <script src="../../assets/catalog.js"></script><script src="../../assets/nav.js"></script><script src="../../assets/site.js"></script>
+  </body>
+</html>
