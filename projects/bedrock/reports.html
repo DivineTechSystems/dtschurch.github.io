@@ -1,0 +1,99 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bedrock reports | DTS Dev Docs</title>
+    <meta name="description" content="How to read and print the monthly health reports in your Bedrock workspace, and about the status report DTS can place on your Rock page." />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,700&amp;family=Work+Sans:wght@400;500;600;700&amp;display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="../../assets/styles.css" />
+  </head>
+  <body>
+    <div class="site-bg" aria-hidden="true">
+      <div class="glow glow-a"></div><div class="glow glow-b"></div><div class="grid-overlay"></div>
+    </div>
+    <header id="site-header"></header>
+    <main class="page docs-shell">
+      <aside class="docs-nav reveal">
+        <h2>Bedrock</h2>
+        <a href="./">About Bedrock</a>
+        <a href="getting-started.html">Getting started</a>
+        <a href="overview.html">Overview page</a>
+        <a href="performance.html">Performance</a>
+        <a href="staging-server.html">Staging server</a>
+        <a href="incidents.html">Incidents</a>
+        <a href="reports.html">Reports</a>
+        <a href="billing.html">Billing</a>
+        <a href="settings.html">Settings and people</a>
+        <a href="help.html">Questions and help</a>
+        <div class="docs-page-toc">
+          <p class="docs-subnav-label">On This Page</p>
+          <nav class="docs-page-toc-links" data-page-toc aria-label="On this page"></nav>
+        </div>
+      </aside>
+      <div class="docs-main">
+        <section class="panel reveal">
+          <p class="eyebrow">Bedrock</p>
+          <h1>Reports</h1>
+          <p class="panel-intro">Each month DTS shares a health report for your church. The Reports page keeps every one that has been shared, newest first.</p>
+          <figure class="doc-figure">
+            <img src="images/reports.png" alt="The Reports page with a list of published reports on the left and the October report open on the right" loading="lazy" />
+            <figcaption>The church, people and figures in these pictures are made up for this guide.</figcaption>
+          </figure>
+        </section>
+
+        <section class="panel reveal" id="reading">
+          <h2>Reading a report</h2>
+          <ol>
+            <li>Open <strong>Reports</strong>. The newest report opens by itself.</li>
+            <li>To read an earlier one, pick its month under <strong>Published reports</strong>.</li>
+          </ol>
+          <p>What a report covers depends on your plan. The usual sections are:</p>
+          <div class="table-wrap">
+            <table>
+              <thead><tr><th>Section</th><th>What it tells you</th></tr></thead>
+              <tbody>
+                <tr><td><strong>Headline</strong></td><td>Your website’s availability for the month, how many checks that is based on, and the average response time.</td></tr>
+                <tr><td><strong>Incidents</strong></td><td>Each interruption: the date, the local start time, how long it lasted and what monitoring observed.</td></tr>
+                <tr><td><strong>Capacity</strong></td><td>How hard the server and database worked, and whether anything is getting close to a limit.</td></tr>
+                <tr><td><strong>Patching</strong></td><td>Whether system updates on your server are current.</td></tr>
+                <tr><td><strong>Backup</strong></td><td>Whether your server and database are being backed up, and when the last backup was taken.</td></tr>
+                <tr><td><strong>Excluded from the figures above</strong></td><td>What the headline figure deliberately leaves out, such as planned maintenance.</td></tr>
+                <tr><td><strong>Recommendations</strong></td><td>Anything DTS suggests you decide on.</td></tr>
+              </tbody>
+            </table>
+          </div>
+          <p>A report cannot be changed once it has been shared, so what you read is what was sent. Your first report appears once DTS has shared it; until then the page says so.</p>
+        </section>
+
+        <section class="panel reveal" id="print">
+          <h2>Printing or saving a report</h2>
+          <ol>
+            <li>Open the report.</li>
+            <li>Press <strong>Print or save as PDF</strong>.</li>
+            <li>In your browser’s print window, choose your printer, or choose <strong>Save as PDF</strong> as the destination.</li>
+          </ol>
+          <p>The list of reports and the print button are left off the printed page. This is the easiest way to pass a report to your board or leadership team.</p>
+        </section>
+
+        <section class="panel reveal" id="rock">
+          <h2>A status report on your own Rock page</h2>
+          <p>DTS can also give you a live status report that sits inside a page of your Rock site, so your staff can see it without signing in to Bedrock.</p>
+          <figure class="doc-figure">
+            <img src="images/embedded-report.png" alt="The embedded Bedrock status report with availability figures, response time, server CPU and database graphs and recent incidents" loading="lazy" />
+            <figcaption>The status report as it appears on a Rock page. DTS chooses with you which sections it shows.</figcaption>
+          </figure>
+          <ul>
+            <li>Ask DTS for it. DTS gives you a short piece of code to paste into an HTML Content block on a Rock page, or adds it for you.</li>
+            <li><strong>Graphs show the last</strong> switches the graphs between 24 hours, 3 days, 7 days and 30 days. Move the pointer over a graph, or tap it, to read a value.</li>
+            <li>The report refreshes by itself every few minutes.</li>
+          </ul>
+          <div class="callout callout-warm"><p>Anyone who can open that Rock page can read the report, and the code is what unlocks it. Put it on a page only your staff can see, and do not share the code. If it may have been shared, ask DTS to replace it; the old code stops working.</p></div>
+        </section>
+      </div>
+    </main>
+    <script src="../../assets/catalog.js"></script><script src="../../assets/nav.js"></script><script src="../../assets/site.js"></script>
+  </body>
+</html>

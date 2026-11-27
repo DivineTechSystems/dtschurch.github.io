@@ -1,0 +1,83 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bedrock incident history | DTS Dev Docs</title>
+    <meta name="description" content="How to read the Incident history page of your Bedrock workspace and what each kind of incident means." />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,700&amp;family=Work+Sans:wght@400;500;600;700&amp;display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="../../assets/styles.css" />
+  </head>
+  <body>
+    <div class="site-bg" aria-hidden="true">
+      <div class="glow glow-a"></div><div class="glow glow-b"></div><div class="grid-overlay"></div>
+    </div>
+    <header id="site-header"></header>
+    <main class="page docs-shell">
+      <aside class="docs-nav reveal">
+        <h2>Bedrock</h2>
+        <a href="./">About Bedrock</a>
+        <a href="getting-started.html">Getting started</a>
+        <a href="overview.html">Overview page</a>
+        <a href="performance.html">Performance</a>
+        <a href="staging-server.html">Staging server</a>
+        <a href="incidents.html">Incidents</a>
+        <a href="reports.html">Reports</a>
+        <a href="billing.html">Billing</a>
+        <a href="settings.html">Settings and people</a>
+        <a href="help.html">Questions and help</a>
+        <div class="docs-page-toc">
+          <p class="docs-subnav-label">On This Page</p>
+          <nav class="docs-page-toc-links" data-page-toc aria-label="On this page"></nav>
+        </div>
+      </aside>
+      <div class="docs-main">
+        <section class="panel reveal">
+          <p class="eyebrow">Bedrock</p>
+          <h1>Incident history</h1>
+          <p class="panel-intro">An incident is a problem Bedrock’s monitoring noticed: the website not answering, answering slowly, a certificate coming up for renewal, or an alert from the server. The Incidents page lists the ones that are open and the ones that were active recently, newest first.</p>
+          <figure class="doc-figure">
+            <img src="images/incidents.png" alt="The Incident history page listing five resolved incidents over 90 days" loading="lazy" />
+            <figcaption>The church, people and figures in these pictures are made up for this guide.</figcaption>
+          </figure>
+        </section>
+
+        <section class="panel reveal" id="reading">
+          <h2>Reading the list</h2>
+          <ul>
+            <li>Use <strong>30 days</strong> or <strong>90 days</strong> at the top right to choose how far back to look.</li>
+            <li>Each incident shows what was affected, what kind of problem it was, when it started and when it was resolved, in your church’s time zone.</li>
+            <li>The badge says <strong>Open</strong> or <strong>Resolved</strong>.</li>
+            <li>If you have a staging site, the <strong>Production / Staging</strong> switch chooses whose incidents you see.</li>
+          </ul>
+          <p>The list holds the 100 most recent incidents. If there are more, a note at the bottom says so; ask DTS for the full history.</p>
+        </section>
+
+        <section class="panel reveal" id="kinds">
+          <h2>What each kind means</h2>
+          <div class="table-wrap">
+            <table>
+              <thead><tr><th>It says</th><th>What happened</th></tr></thead>
+              <tbody>
+                <tr><td><strong>Website · Not responding</strong></td><td>A check could not reach your website. This is an outage, and it counts toward the time down on <a href="performance.html">Performance</a>.</td></tr>
+                <tr><td><strong>Website · Slow response</strong></td><td>The site answered, but slower than the limit DTS set, several checks in a row. Not an outage.</td></tr>
+                <tr><td><strong>Security certificate · Certificate renewal needed</strong></td><td>The certificate that gives your site its padlock was coming up for renewal. It opens ahead of the expiry date so there is time to renew, and resolves once the new certificate is in place.</td></tr>
+                <tr><td><strong>Server · Not responding</strong></td><td>A check on one of your servers, rather than the website itself, could not connect.</td></tr>
+                <tr><td><strong>Server health · Health alert</strong></td><td>Something on the server crossed a limit, such as processor, memory or disk use. It does not necessarily mean your website was offline.</td></tr>
+              </tbody>
+            </table>
+          </div>
+        </section>
+
+        <section class="panel reveal" id="open">
+          <h2>When an incident is open</h2>
+          <p>Your DTS team sees every incident as it opens and tracks the follow-up. An open incident also shows on the <a href="overview.html#status">Overview’s status card</a> and in its <strong>Open incidents</strong> figure.</p>
+          <p>The list shows what monitoring observed, not why it happened. The cause, and anything DTS recommends because of it, is in your <a href="reports.html">monthly report</a>. For a question about a particular incident, give DTS its start time.</p>
+        </section>
+      </div>
+    </main>
+    <script src="../../assets/catalog.js"></script><script src="../../assets/nav.js"></script><script src="../../assets/site.js"></script>
+  </body>
+</html>

@@ -1,0 +1,108 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bedrock Performance page | DTS Dev Docs</title>
+    <meta name="description" content="How to read the Performance page of your Bedrock workspace: uptime, response time, server and database load and the 90-day uptime history." />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,700&amp;family=Work+Sans:wght@400;500;600;700&amp;display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="../../assets/styles.css" />
+  </head>
+  <body>
+    <div class="site-bg" aria-hidden="true">
+      <div class="glow glow-a"></div><div class="glow glow-b"></div><div class="grid-overlay"></div>
+    </div>
+    <header id="site-header"></header>
+    <main class="page docs-shell">
+      <aside class="docs-nav reveal">
+        <h2>Bedrock</h2>
+        <a href="./">About Bedrock</a>
+        <a href="getting-started.html">Getting started</a>
+        <a href="overview.html">Overview page</a>
+        <a href="performance.html">Performance</a>
+        <a href="staging-server.html">Staging server</a>
+        <a href="incidents.html">Incidents</a>
+        <a href="reports.html">Reports</a>
+        <a href="billing.html">Billing</a>
+        <a href="settings.html">Settings and people</a>
+        <a href="help.html">Questions and help</a>
+        <div class="docs-page-toc">
+          <p class="docs-subnav-label">On This Page</p>
+          <nav class="docs-page-toc-links" data-page-toc aria-label="On this page"></nav>
+        </div>
+      </aside>
+      <div class="docs-main">
+        <section class="panel reveal">
+          <p class="eyebrow">Bedrock</p>
+          <h1>Performance</h1>
+          <p class="panel-intro">Performance shows how your website has been doing over time. These are the same figures your DTS team works from. If you have a staging site, use the <strong>Production / Staging</strong> switch to choose which one you are looking at.</p>
+          <figure class="doc-figure">
+            <img src="images/performance.png" alt="The Performance page with status and uptime tiles, a 90-day uptime history and response time and load panels" loading="lazy" />
+            <figcaption>The church, people and figures in these pictures are made up for this guide.</figcaption>
+          </figure>
+        </section>
+
+        <section class="panel reveal" id="tiles">
+          <h2>The tiles at the top</h2>
+          <div class="table-wrap">
+            <table>
+              <thead><tr><th>Tile</th><th>What it shows</th></tr></thead>
+              <tbody>
+                <tr><td><strong>Status</strong></td><td>The same one-line status as the <a href="overview.html#status">Overview</a>, and when the site was last checked.</td></tr>
+                <tr><td><strong>Uptime · 24 hours / 7 days / 30 days</strong></td><td>The share of checks your site answered in each period, with the number of outages and the total time down. Green is 99.9% or better, amber is 99% to 99.9%, red is below 99%.</td></tr>
+                <tr><td><strong>Server size</strong></td><td>The size of the server your site runs on, with its processors (vCPUs) and memory.</td></tr>
+                <tr><td><strong>Database speed</strong></td><td>The speed tier of your Rock database. A higher tier handles more work at once.</td></tr>
+              </tbody>
+            </table>
+          </div>
+          <p>Server size and Database speed show a dash when DTS does not host that part for you, or it is not connected to Bedrock yet.</p>
+        </section>
+
+        <section class="panel reveal" id="history">
+          <h2>Uptime history</h2>
+          <p>One bar for each of the last 90 days, oldest on the left. Hover over a bar to see the date, that day’s uptime and how many checks ran.</p>
+          <ul>
+            <li><strong>Green</strong>: 99.9% and above.</li>
+            <li><strong>Amber</strong>: 99% to 99.9%.</li>
+            <li><strong>Red</strong>: below 99%.</li>
+            <li><strong>Grey</strong>: no checks that day, for example before monitoring started.</li>
+          </ul>
+          <p>The line above the bars gives the average and the lowest day. To see what happened on a coloured day, open <a href="incidents.html">Incidents</a> and choose <strong>90 days</strong>.</p>
+          <div class="callout"><p>A short outage turns a whole day’s bar amber or red, because 99.9% of a day is under a minute and a half. One red bar does not mean the site was down all day.</p></div>
+        </section>
+
+        <section class="panel reveal" id="response">
+          <h2>Response time</h2>
+          <p>How long your site took to answer each check over the last 24 hours, with the average, fastest and slowest. A gap in the line is a check that did not get an answer.</p>
+          <p>Response time is measured from Bedrock’s checker, not from your building, so it will not match exactly what one person sees on their own connection. It is most useful for spotting change: a line that climbs and stays up.</p>
+        </section>
+
+        <section class="panel reveal" id="load">
+          <h2>Server and database load</h2>
+          <p>These figures appear once DTS has connected infrastructure monitoring for the environment.</p>
+          <div class="table-wrap">
+            <table>
+              <thead><tr><th>Figure</th><th>What it shows</th></tr></thead>
+              <tbody>
+                <tr><td><strong>Server CPU</strong></td><td>How busy the server’s processor was on average over 24 hours, with the peak.</td></tr>
+                <tr><td><strong>Database load</strong> or <strong>Database CPU</strong></td><td>How much of the database’s capacity was in use on average, with the peak.</td></tr>
+                <tr><td><strong>Server disk free</strong></td><td>The share of disk space still free at the latest reading.</td></tr>
+                <tr><td><strong>Database storage used</strong></td><td>The share of the database’s storage in use at the latest reading.</td></tr>
+              </tbody>
+            </table>
+          </div>
+          <p>Brief peaks are normal, especially around weekend services and large emails. DTS watches these and raises anything that needs a decision, such as a larger server, in your <a href="reports.html">monthly report</a>.</p>
+        </section>
+
+        <section class="panel reveal" id="staging">
+          <h2>On the Staging tab</h2>
+          <p>Staging shows the same figures for your test site, plus the <strong>Staging server</strong> card where you can start, stop and resize the server. See <a href="staging-server.html">Staging server</a>.</p>
+          <p>If the page says <strong>DTS has not started checks for your staging site yet</strong>, the figures appear once checks are running.</p>
+        </section>
+      </div>
+    </main>
+    <script src="../../assets/catalog.js"></script><script src="../../assets/nav.js"></script><script src="../../assets/site.js"></script>
+  </body>
+</html>

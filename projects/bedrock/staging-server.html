@@ -1,0 +1,105 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bedrock staging server | DTS Dev Docs</title>
+    <meta name="description" content="How a church starts, stops and resizes its staging server and changes its database speed from the Bedrock workspace." />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,700&amp;family=Work+Sans:wght@400;500;600;700&amp;display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="../../assets/styles.css" />
+  </head>
+  <body>
+    <div class="site-bg" aria-hidden="true">
+      <div class="glow glow-a"></div><div class="glow glow-b"></div><div class="grid-overlay"></div>
+    </div>
+    <header id="site-header"></header>
+    <main class="page docs-shell">
+      <aside class="docs-nav reveal">
+        <h2>Bedrock</h2>
+        <a href="./">About Bedrock</a>
+        <a href="getting-started.html">Getting started</a>
+        <a href="overview.html">Overview page</a>
+        <a href="performance.html">Performance</a>
+        <a href="staging-server.html">Staging server</a>
+        <a href="incidents.html">Incidents</a>
+        <a href="reports.html">Reports</a>
+        <a href="billing.html">Billing</a>
+        <a href="settings.html">Settings and people</a>
+        <a href="help.html">Questions and help</a>
+        <div class="docs-page-toc">
+          <p class="docs-subnav-label">On This Page</p>
+          <nav class="docs-page-toc-links" data-page-toc aria-label="On this page"></nav>
+        </div>
+      </aside>
+      <div class="docs-main">
+        <section class="panel reveal">
+          <p class="eyebrow">Bedrock</p>
+          <h1>Your staging server</h1>
+          <p class="panel-intro">Staging is a test copy of your website, for trying changes before they reach the site your visitors use. If DTS has connected your staging server to Bedrock, you can start it, stop it, resize it and change its database speed yourself, without waiting on DTS.</p>
+          <p>Find it under <strong>Performance</strong> → <strong>Staging</strong>.</p>
+          <figure class="doc-figure">
+            <img src="images/staging-server.png" alt="The Staging server card showing size, database speed, the Power, Resize server and Database speed controls and a list of recent changes" loading="lazy" />
+            <figcaption>The church, people and figures in these pictures are made up for this guide.</figcaption>
+          </figure>
+          <div class="callout callout-warm"><p>These controls work on <strong>staging only</strong>. Changes to your production server and database are made by DTS; ask your DTS team.</p></div>
+        </section>
+
+        <section class="panel reveal" id="reading">
+          <h2>Reading the card</h2>
+          <ul>
+            <li>The badge at the top right says whether the server is <strong>Running</strong>, <strong>Stopped</strong>, <strong>Starting up</strong> or <strong>Shutting down</strong>.</li>
+            <li><strong>Server size</strong> and <strong>Database speed</strong> are what the server and database are set to now.</li>
+            <li><strong>Last read</strong> is when Bedrock last asked Azure, the cloud service your server runs on. It asks again after each change.</li>
+          </ul>
+          <p>If the card says <strong>No staging server is connected yet</strong>, DTS has not linked your staging server to Bedrock. Ask DTS if you expected to see it.</p>
+        </section>
+
+        <section class="panel reveal" id="power">
+          <h2>Stopping and starting the server</h2>
+          <p>A stopped server does not cost compute time, so stopping staging when nobody is using it saves money. While it is stopped, the staging site is unavailable to everyone.</p>
+          <ol>
+            <li>Under <strong>Power</strong>, press <strong>Stop server</strong> (or <strong>Start server</strong> if it is stopped).</li>
+            <li>Read the confirmation and press <strong>Yes, go ahead</strong>.</li>
+            <li>The card shows the change in progress and updates itself when Azure finishes. Starting takes a few minutes.</li>
+          </ol>
+          <figure class="doc-figure doc-figure-narrow">
+            <img src="images/staging-confirm.png" alt="The confirmation shown before stopping the staging server, with Yes, go ahead and Cancel buttons" loading="lazy" />
+            <figcaption>Every change asks you to confirm first.</figcaption>
+          </figure>
+        </section>
+
+        <section class="panel reveal" id="resize">
+          <h2>Resizing the server</h2>
+          <ol>
+            <li>Under <strong>Resize server</strong>, choose a size. Each one shows its processors (vCPUs) and memory. Only sizes Azure offers for your server are listed.</li>
+            <li>Press <strong>Resize</strong>, then <strong>Yes, go ahead</strong>.</li>
+          </ol>
+          <p>Azure restarts the server to apply the new size, so the staging site is briefly unavailable. The monthly cost of the server changes with its size.</p>
+        </section>
+
+        <section class="panel reveal" id="database">
+          <h2>Changing the database speed</h2>
+          <ol>
+            <li>Under <strong>Database speed</strong>, choose a speed. Higher numbers are faster and cost more.</li>
+            <li>Press <strong>Change</strong>, then <strong>Yes, go ahead</strong>.</li>
+          </ol>
+          <p>The database stays available while Azure moves it. You can choose speeds S0 to S6 yourself. Faster ones are listed under <strong>Ask DTS for</strong>; if the list says <strong>Set by DTS</strong>, your database is on a kind of plan DTS adjusts for you.</p>
+        </section>
+
+        <section class="panel reveal" id="rules">
+          <h2>Good to know</h2>
+          <ul>
+            <li><strong>Anyone at your church with access can make these changes.</strong></li>
+            <li><strong>Every change is recorded with the name of the person who asked</strong>, listed under <strong>Recent changes</strong>, and shown to DTS.</li>
+            <li><strong>One change at a time.</strong> While a change is in progress the buttons are off. Wait for it to finish.</li>
+            <li>A change that ends as <strong>Did not complete</strong> shows the reason under it. Try again, and if it fails twice tell DTS.</li>
+            <li>If the card says <strong>Bedrock cannot reach Azure right now</strong>, changes are paused. Try again later.</li>
+          </ul>
+        </section>
+      </div>
+    </main>
+    <script src="../../assets/catalog.js"></script><script src="../../assets/nav.js"></script><script src="../../assets/site.js"></script>
+  </body>
+</html>

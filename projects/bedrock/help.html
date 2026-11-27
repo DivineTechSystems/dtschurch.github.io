@@ -1,0 +1,104 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bedrock questions and help | DTS Dev Docs</title>
+    <meta name="description" content="Common questions about the Bedrock workspace for churches, and who to ask for help." />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,700&amp;family=Work+Sans:wght@400;500;600;700&amp;display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="../../assets/styles.css" />
+  </head>
+  <body>
+    <div class="site-bg" aria-hidden="true">
+      <div class="glow glow-a"></div><div class="glow glow-b"></div><div class="grid-overlay"></div>
+    </div>
+    <header id="site-header"></header>
+    <main class="page docs-shell">
+      <aside class="docs-nav reveal">
+        <h2>Bedrock</h2>
+        <a href="./">About Bedrock</a>
+        <a href="getting-started.html">Getting started</a>
+        <a href="overview.html">Overview page</a>
+        <a href="performance.html">Performance</a>
+        <a href="staging-server.html">Staging server</a>
+        <a href="incidents.html">Incidents</a>
+        <a href="reports.html">Reports</a>
+        <a href="billing.html">Billing</a>
+        <a href="settings.html">Settings and people</a>
+        <a href="help.html">Questions and help</a>
+        <div class="docs-page-toc">
+          <p class="docs-subnav-label">On This Page</p>
+          <nav class="docs-page-toc-links" data-page-toc aria-label="On this page"></nav>
+        </div>
+      </aside>
+      <div class="docs-main">
+        <section class="panel reveal">
+          <p class="eyebrow">Bedrock</p>
+          <h1>Questions and help</h1>
+          <p class="panel-intro">Quick answers to the things churches ask most, and who to contact for the rest.</p>
+        </section>
+
+        <section class="panel reveal" id="signing-in">
+          <h2>Signing in</h2>
+          <h3>I forgot my password.</h3>
+          <p>Ask DTS for a password reset link. It opens a page where you choose a new password. There is no “forgot password” button on the sign-in page.</p>
+          <h3>My invitation says “This link no longer works”.</h3>
+          <p>It expired, was already used, or was replaced by a newer link. Ask whoever invited you to invite you again from <a href="settings.html#people">Settings</a>, or ask DTS.</p>
+          <h3>I was signed out unexpectedly.</h3>
+          <p>This usually means your password was changed somewhere else or your session ended. Sign in again.</p>
+          <h3>It says “No organization access”.</h3>
+          <p>Your sign-in works, but it is not attached to a church at the moment, usually because your access was removed. Ask a colleague with access to invite you again, or ask DTS.</p>
+          <h3>Can two of us share one sign-in?</h3>
+          <p>Please do not. Inviting a colleague takes a minute and costs nothing, and changes such as stopping the staging server are recorded under the name of whoever made them. See <a href="settings.html#people">People with access</a>.</p>
+        </section>
+
+        <section class="panel reveal" id="status">
+          <h2>Status and incidents</h2>
+          <h3>Bedrock says my website is not responding. Do I need to tell DTS?</h3>
+          <p>No. DTS sees the same incident. Check the <a href="overview.html#status">Overview</a> for the latest status.</p>
+          <h3>My website seems down, but Bedrock says checks are passing.</h3>
+          <p>Bedrock checks your site from outside at regular intervals, so a very new problem may not show yet, and a problem with one page, or with the network in your building, will not show at all. Try the site on a phone using mobile data. If it is still down, contact DTS and say what you see.</p>
+          <h3>Why is a day red in the uptime history when the site was only down for a few minutes?</h3>
+          <p>The colours are strict: a day turns amber below 99.9%, which is about a minute and a half. See <a href="performance.html#history">Uptime history</a>.</p>
+          <h3>What is a “server health alert”?</h3>
+          <p>A reading on the server, such as processor, memory or disk use, crossed a limit. It often has no effect on the website. See <a href="incidents.html#kinds">What each kind means</a>.</p>
+          <h3>The times look wrong.</h3>
+          <p>Times are shown in your church’s time zone as DTS has it on file. Check it under <a href="settings.html#organization">Settings → Organization</a> and ask DTS to correct it if needed.</p>
+        </section>
+
+        <section class="panel reveal" id="other">
+          <h2>Reports, billing and staging</h2>
+          <h3>I do not see any reports.</h3>
+          <p>Reports appear once DTS has shared the first one. If you expected one by now, ask DTS.</p>
+          <h3>Can I get a report as a PDF?</h3>
+          <p>Yes. Open it and press <strong>Print or save as PDF</strong>. See <a href="reports.html#print">Printing or saving a report</a>.</p>
+          <h3>Who can see our billing?</h3>
+          <p>Everyone at your church with access can see the Billing page and open Stripe’s billing page. Nobody can see the full card number, including DTS.</p>
+          <h3>I do not see a Staging tab.</h3>
+          <p>The switch appears only if your church has a staging site. If you expected one, ask DTS.</p>
+          <h3>Can I restart or resize our production server?</h3>
+          <p>No. Changes to production are made by DTS, so that they are planned around your services. Ask your DTS team.</p>
+        </section>
+
+        <section class="panel reveal" id="contact">
+          <h2>Who to ask</h2>
+          <div class="table-wrap">
+            <table>
+              <thead><tr><th>For</th><th>Ask</th></tr></thead>
+              <tbody>
+                <tr><td>A new invitation for a colleague</td><td>Anyone at your church with access can send one from <a href="settings.html#people">Settings</a>.</td></tr>
+                <tr><td>A password reset, a changed email address, or a correction to your church’s details</td><td>Your DTS representative.</td></tr>
+                <tr><td>A question about an incident or a report</td><td>Your DTS representative. Give the date and time shown in Bedrock.</td></tr>
+                <tr><td>A plan change, or a question about an invoice</td><td>Your DTS representative.</td></tr>
+                <tr><td>Something urgent with your website</td><td>Contact DTS the way your service agreement describes. Bedrock shows status; it is not a way to send DTS a message.</td></tr>
+              </tbody>
+            </table>
+          </div>
+        </section>
+      </div>
+    </main>
+    <script src="../../assets/catalog.js"></script><script src="../../assets/nav.js"></script><script src="../../assets/site.js"></script>
+  </body>
+</html>

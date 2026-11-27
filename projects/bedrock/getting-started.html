@@ -1,0 +1,114 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Getting started with Bedrock | DTS Dev Docs</title>
+    <meta name="description" content="How a church gets into its Bedrock workspace: the invitation link, signing in, the payment link and the setup questions." />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,700&amp;family=Work+Sans:wght@400;500;600;700&amp;display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="../../assets/styles.css" />
+  </head>
+  <body>
+    <div class="site-bg" aria-hidden="true">
+      <div class="glow glow-a"></div><div class="glow glow-b"></div><div class="grid-overlay"></div>
+    </div>
+    <header id="site-header"></header>
+    <main class="page docs-shell">
+      <aside class="docs-nav reveal">
+        <h2>Bedrock</h2>
+        <a href="./">About Bedrock</a>
+        <a href="getting-started.html">Getting started</a>
+        <a href="overview.html">Overview page</a>
+        <a href="performance.html">Performance</a>
+        <a href="staging-server.html">Staging server</a>
+        <a href="incidents.html">Incidents</a>
+        <a href="reports.html">Reports</a>
+        <a href="billing.html">Billing</a>
+        <a href="settings.html">Settings and people</a>
+        <a href="help.html">Questions and help</a>
+        <div class="docs-page-toc">
+          <p class="docs-subnav-label">On This Page</p>
+          <nav class="docs-page-toc-links" data-page-toc aria-label="On this page"></nav>
+        </div>
+      </aside>
+      <div class="docs-main">
+        <section class="panel reveal">
+          <p class="eyebrow">Bedrock</p>
+          <h1>Getting started</h1>
+          <p class="panel-intro">You get into Bedrock with a private link, not by signing up. DTS sends the first one; after that, anyone at your church with access can invite the next person. This page covers your first visit from start to finish.</p>
+          <div class="callout">
+            <p><a href="#invitation">Open your invitation</a> → <a href="#sign-in">sign in</a> → <a href="#payment">set up payment</a> (if DTS sent a payment link) → <a href="#setup">answer the setup questions</a> → DTS takes it from there</p>
+          </div>
+        </section>
+
+        <section class="panel reveal" id="invitation">
+          <h2>Open your invitation</h2>
+          <p>Your invitation is a link from DTS or from someone at your church. It is private to you, works once, and expires on the date shown on the page.</p>
+          <ol>
+            <li>Open the link. The page says <strong>Welcome to Bedrock</strong> with your church’s name and your email address.</li>
+            <li>Type a password in <strong>Choose a password</strong> and again in <strong>Confirm password</strong>. Use at least 8 characters, and avoid common passwords and your own name or email.</li>
+            <li>Press <strong>Open my workspace</strong>. You are signed in and land on the <a href="overview.html">Overview</a>.</li>
+          </ol>
+          <figure class="doc-figure">
+            <img src="images/invitation.png" alt="The Welcome to Bedrock page with the Choose a password and Confirm password boxes" loading="lazy" />
+            <figcaption>The invitation page. From then on you sign in with this email address and the password you chose.</figcaption>
+          </figure>
+          <p>If you already have a Bedrock account (for example you help two churches), the page asks for <strong>Your existing password</strong> instead, and the new church is added to your account.</p>
+          <div class="callout callout-warm"><p><strong>“This link no longer works”</strong> means it expired, was already used, or was replaced by a newer one. Open the link from the original message rather than typing it, and if it still fails ask for a new one. Anyone at your church with access can send one from <a href="settings.html#people">Settings</a>, or ask DTS.</p></div>
+        </section>
+
+        <section class="panel reveal" id="sign-in">
+          <h2>Signing in after that</h2>
+          <ol>
+            <li>Go to <a href="https://bedrock.dtschurch.com" target="_blank" rel="noreferrer noopener">bedrock.dtschurch.com</a>.</li>
+            <li>Type your email address and password and press <strong>Sign in</strong>.</li>
+          </ol>
+          <figure class="doc-figure">
+            <img src="images/sign-in.png" alt="The Bedrock sign-in page with Email or username and Password boxes" loading="lazy" />
+            <figcaption>The sign-in page. The Microsoft sign-in button at the bottom is for DTS staff only.</figcaption>
+          </figure>
+          <p><strong>Forgot your password?</strong> There is no “forgot password” button. Ask DTS for a password reset link; it opens a page like the invitation where you choose a new password. To change a password you still know, see <a href="settings.html#account">My account</a>.</p>
+        </section>
+
+        <section class="panel reveal" id="payment">
+          <h2>Setting up payment</h2>
+          <p>When your plan is agreed, DTS sends a payment link to the person who handles billing. You do not need to be signed in to use it.</p>
+          <ol>
+            <li>Open the link. The page <strong>Set up your Bedrock subscription</strong> shows your plan, what is due today, and what you pay each month after that.</li>
+            <li>Press <strong>Continue to payment</strong>. You go to a secure Stripe page to enter the card. Bedrock never sees your card number.</li>
+            <li>When Stripe brings you back, the page says <strong>Payment received</strong>. If you do not have a Bedrock sign-in yet, press <strong>Set up your portal sign-in</strong> to create one.</li>
+          </ol>
+          <figure class="doc-figure">
+            <img src="images/payment-link.png" alt="The Set up your Bedrock subscription page listing the plan, setup fee, the rest of this month and the monthly amount" loading="lazy" />
+            <figcaption>The payment page for an example plan. Your own page shows the plan and amounts DTS agreed with you. Every subscription renews on the first of the month, so the first charge covers only the days left in the current month.</figcaption>
+          </figure>
+          <p>The link stays open until the date at the bottom of the page. If it has expired or was cancelled, ask DTS for a new one. After you have paid, everything about your subscription is on the <a href="billing.html">Billing</a> page.</p>
+        </section>
+
+        <section class="panel reveal" id="setup">
+          <h2>Answering the setup questions</h2>
+          <p>While DTS is getting your services ready, the Overview shows a banner, <strong>Let’s get the essentials in place</strong>, with a <strong>Continue setup</strong> button. It opens a short form so DTS has what it needs.</p>
+          <figure class="doc-figure">
+            <img src="images/overview-new.png" alt="The Overview of a church that is still getting set up, with the setup banner at the top" loading="lazy" />
+            <figcaption>A church that has just joined. Monitoring has not started yet, so the figures are empty and each service says Not started yet. That is expected at this stage.</figcaption>
+          </figure>
+          <p>The form has three steps: <strong>Your details</strong>, <strong>Your services</strong> and <strong>Review</strong>.</p>
+          <ul>
+            <li>Anything DTS already has on file is filled in for you. Change it only if it is wrong.</li>
+            <li>Share what you know. If you are not sure about an answer, say so and DTS will help.</li>
+            <li><strong>Save &amp; continue</strong> moves to the next step. <strong>Save for later</strong> keeps your answers so you can come back.</li>
+            <li>On <strong>Review</strong>, check your answers and send them to DTS.</li>
+          </ul>
+          <figure class="doc-figure">
+            <img src="images/setup.png" alt="The first step of the setup form, Your details, with website address, name, email, phone and time zone" loading="lazy" />
+            <figcaption>Step 1 of the setup form.</figcaption>
+          </figure>
+          <p>After you send your details the page says <strong>Your details are with the DTS team</strong>. DTS reviews new details within a few business days and emails you if anything needs clarifying. The Overview’s <a href="overview.html#next">What happens next</a> section shows where things stand.</p>
+        </section>
+      </div>
+    </main>
+    <script src="../../assets/catalog.js"></script><script src="../../assets/nav.js"></script><script src="../../assets/site.js"></script>
+  </body>
+</html>

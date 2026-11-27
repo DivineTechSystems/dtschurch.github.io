@@ -1,0 +1,29 @@
+{
+  "capturedAt": "2026-11-26T22:15:00-06:00",
+  "sourceSystem": "local Bedrock (branch feat/embedded-status-report) with a scratch database made only for these pictures; never production or a copy of it",
+  "testData": "two made-up churches, \"Riverbend Community Church\" (live, Core plan, production and staging) and \"Harvest Point Church\" (still being set up); made-up people with .example addresses; checks, incidents, load readings, reports, invoices and staging changes are all generated",
+  "stubbedReads": "there is no Azure behind the demo church, so the server size, database speed, power state and list of available sizes are fixed made-up values; every page is otherwise the real application",
+  "writePolicy": "no email sent, no Stripe call, no Azure call; the scratch database can be dropped at any time",
+  "viewport": "1280 px wide at 1.5x unless noted",
+  "images": [
+    { "file": "overview.png", "page": "index.html, overview.html", "screen": "Overview (Production)", "processing": "full page" },
+    { "file": "overview-phone.png", "page": "overview.html", "screen": "Overview on a phone", "processing": "390 px wide, first screen only" },
+    { "file": "overview-new.png", "page": "getting-started.html", "screen": "Overview of a church still being set up", "processing": "full page" },
+    { "file": "invitation.png", "page": "getting-started.html", "screen": "Account invitation (Welcome to Bedrock)", "processing": "full page; the link's private part is not shown" },
+    { "file": "sign-in.png", "page": "getting-started.html", "screen": "Sign in", "processing": "full page" },
+    { "file": "payment-link.png", "page": "getting-started.html", "screen": "Payment link page (Set up your Bedrock subscription)", "processing": "full page; shows the Core plan's amounts" },
+    { "file": "setup.png", "page": "getting-started.html", "screen": "Your setup, step 1", "processing": "full page" },
+    { "file": "performance.png", "page": "performance.html", "screen": "Performance (Production)", "processing": "full page" },
+    { "file": "staging-server.png", "page": "staging-server.html", "screen": "Performance (Staging), Staging server card", "processing": "cropped to the card" },
+    { "file": "staging-confirm.png", "page": "staging-server.html", "screen": "Staging server card, confirmation before Stop server", "processing": "cropped to the confirmation; cancelled, nothing was changed" },
+    { "file": "incidents.png", "page": "incidents.html", "screen": "Incident history, 90 days", "processing": "full page" },
+    { "file": "reports.png", "page": "reports.html", "screen": "Reports, October report open", "processing": "first screen only" },
+    { "file": "embedded-report.png", "page": "reports.html", "screen": "Embedded status report", "processing": "the report page itself at 900 px wide, as a Rock page frames it" },
+    { "file": "billing.png", "page": "billing.html", "screen": "Billing with an active subscription", "processing": "full page; shows the Core plan's amounts and a test card ending 4242" },
+    { "file": "billing-new.png", "page": "billing.html", "screen": "Billing before a subscription starts", "processing": "full page" },
+    { "file": "settings-account.png", "page": "settings.html", "screen": "Settings, My account", "processing": "full page" },
+    { "file": "invite-link.png", "page": "settings.html", "screen": "People with access after pressing Invite", "processing": "cropped to the card; the invitation was cancelled afterwards and its link is cut off by the box" },
+    { "file": "maintenance.png", "page": "settings.html", "screen": "Maintenance preferences, accepted", "processing": "cropped to the card" },
+    { "file": "maintenance-form.png", "page": "settings.html", "screen": "Maintenance preferences form", "processing": "cropped to the card; not submitted" }
+  ]
+}

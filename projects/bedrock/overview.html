@@ -1,0 +1,142 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bedrock Overview page | DTS Dev Docs</title>
+    <meta name="description" content="How to read the Overview page of your Bedrock workspace: the website status card, the four figures, what happens next and your services." />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,700&amp;family=Work+Sans:wght@400;500;600;700&amp;display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="../../assets/styles.css" />
+  </head>
+  <body>
+    <div class="site-bg" aria-hidden="true">
+      <div class="glow glow-a"></div><div class="glow glow-b"></div><div class="grid-overlay"></div>
+    </div>
+    <header id="site-header"></header>
+    <main class="page docs-shell">
+      <aside class="docs-nav reveal">
+        <h2>Bedrock</h2>
+        <a href="./">About Bedrock</a>
+        <a href="getting-started.html">Getting started</a>
+        <a href="overview.html">Overview page</a>
+        <a href="performance.html">Performance</a>
+        <a href="staging-server.html">Staging server</a>
+        <a href="incidents.html">Incidents</a>
+        <a href="reports.html">Reports</a>
+        <a href="billing.html">Billing</a>
+        <a href="settings.html">Settings and people</a>
+        <a href="help.html">Questions and help</a>
+        <div class="docs-page-toc">
+          <p class="docs-subnav-label">On This Page</p>
+          <nav class="docs-page-toc-links" data-page-toc aria-label="On this page"></nav>
+        </div>
+      </aside>
+      <div class="docs-main">
+        <section class="panel reveal">
+          <p class="eyebrow">Bedrock</p>
+          <h1>The Overview page</h1>
+          <p class="panel-intro">The Overview is the first page you see after signing in. It answers four questions, top to bottom: is the website up, how has it been doing, does anyone need to do anything, and what is on your plan.</p>
+          <figure class="doc-figure">
+            <img src="images/overview.png" alt="The Overview page showing the status card, four figures, What happens next and Your services" loading="lazy" />
+            <figcaption>The church, people and figures in these pictures are made up for this guide.</figcaption>
+          </figure>
+        </section>
+
+        <section class="panel reveal" id="organization">
+          <h2>Organization and environment</h2>
+          <p>At the top right, <strong>Organization</strong> shows which church you are looking at. If your account has access to more than one, pick the other one here.</p>
+          <p>If your church has a staging site, a <strong>Production / Staging</strong> switch appears under the page title on Overview, Performance and Incidents.</p>
+          <ul>
+            <li><strong>Production</strong> is the site your visitors use.</li>
+            <li><strong>Staging</strong> is a test copy of your site, for trying changes first.</li>
+          </ul>
+          <p>Churches with only a production site do not see the switch.</p>
+        </section>
+
+        <section class="panel reveal" id="status">
+          <h2>The status card</h2>
+          <p>The card at the top says in one line how your website is doing right now, with the time of the last check in your church’s time zone.</p>
+          <div class="table-wrap">
+            <table>
+              <thead><tr><th>It says</th><th>What it means</th></tr></thead>
+              <tbody>
+                <tr><td><strong>Website checks are passing</strong></td><td>Your website answered and its security certificate was valid at the last check.</td></tr>
+                <tr><td><strong>Your website is not responding</strong></td><td>A check could not reach your site. The card says since when. DTS can see this and is tracking it.</td></tr>
+                <tr><td><strong>Your website is up but responding slowly</strong></td><td>The site answers, but pages may take longer to load for a while.</td></tr>
+                <tr><td><strong>… the security certificate is due for renewal</strong></td><td>DTS tracks certificate renewals. Nothing is needed from you unless DTS gets in touch.</td></tr>
+                <tr><td><strong>… a server health alert is open</strong></td><td>Something on the server (such as processor or disk use) crossed a limit. Your website may be unaffected.</td></tr>
+                <tr><td><strong>Website monitoring hasn’t started yet</strong> / <strong>Website checks are starting up</strong></td><td>You are still being set up. DTS turns checks on; nothing is needed from you.</td></tr>
+                <tr><td><strong>Website checks haven’t reported recently</strong></td><td>The last check is older than expected. It does not mean your website is down; DTS can see it.</td></tr>
+              </tbody>
+            </table>
+          </div>
+          <div class="callout callout-warm"><p>If the card says your website is not responding, you do not need to report it: DTS sees the same thing. Check back on this page for the latest status.</p></div>
+        </section>
+
+        <section class="panel reveal" id="figures">
+          <h2>The four figures</h2>
+          <div class="table-wrap">
+            <table>
+              <thead><tr><th>Figure</th><th>What it shows</th></tr></thead>
+              <tbody>
+                <tr><td><strong>Uptime · 30 days</strong></td><td>The share of checks your site answered in the last 30 days, with the last 24 hours underneath. Green is 99.9% or better, amber is 99% to 99.9%, red is below 99%.</td></tr>
+                <tr><td><strong>Response time · 24 hours</strong></td><td>How long your site took to answer, on average, with the fastest and slowest check.</td></tr>
+                <tr><td><strong>Open incidents</strong></td><td>How many problems are open right now, with the number of outages and total time down in the last 30 days.</td></tr>
+                <tr><td><strong>Server and database</strong></td><td>The size of your server and the speed tier of your database, if DTS hosts them for you.</td></tr>
+              </tbody>
+            </table>
+          </div>
+          <p><strong>See performance in detail</strong> opens <a href="performance.html">Performance</a>; <strong>Incident history</strong> opens <a href="incidents.html">Incidents</a>.</p>
+        </section>
+
+        <section class="panel reveal" id="next">
+          <h2>What happens next</h2>
+          <p>This section says who has the next step. When nothing is waiting on you it says <strong>No new action is needed from you right now</strong>.</p>
+          <div class="table-wrap">
+            <table>
+              <thead><tr><th>Heading</th><th>What is listed under it</th></tr></thead>
+              <tbody>
+                <tr><td><strong>Your next steps</strong></td><td>Things waiting on your church: finishing the <a href="getting-started.html#setup">setup questions</a>, a change DTS asked for to your maintenance preference, or a service that needs your team’s input. Each has a button that takes you to the right place.</td></tr>
+                <tr><td><strong>With DTS or a provider</strong></td><td>Things you have sent that DTS is reviewing, and services DTS or an outside provider is working on.</td></tr>
+                <tr><td><strong>Latest from DTS</strong></td><td>Recent decisions, such as DTS accepting your maintenance preference.</td></tr>
+              </tbody>
+            </table>
+          </div>
+          <p>If DTS needs a change made where your domain name is managed, a <strong>Connect your website</strong> card appears here with the exact values to copy. Pass it to whoever manages your domain.</p>
+        </section>
+
+        <section class="panel reveal" id="services">
+          <h2>Your services</h2>
+          <p>The list at the bottom shows each service on your plan and where it stands. The line under each name says where the status comes from and how recently it was confirmed.</p>
+          <div class="table-wrap">
+            <table>
+              <thead><tr><th>Status</th><th>Meaning</th></tr></thead>
+              <tbody>
+                <tr><td><strong>Verified</strong></td><td>Bedrock checked this itself and it is in place.</td></tr>
+                <tr><td><strong>Delivered</strong></td><td>Your DTS team recorded it as in place.</td></tr>
+                <tr><td><strong>DTS is working on this</strong></td><td>In progress on the DTS side.</td></tr>
+                <tr><td><strong>Waiting on you</strong></td><td>DTS needs something from your church. Check <strong>What happens next</strong>, or ask DTS.</td></tr>
+                <tr><td><strong>DTS is following up</strong> / <strong>Waiting on a provider</strong></td><td>Held up on the DTS side or with an outside company. Nothing is needed from you.</td></tr>
+                <tr><td><strong>Not started yet</strong></td><td>Normal while you are being set up.</td></tr>
+                <tr><td><strong>Set up later</strong></td><td>An optional service you and DTS agreed to postpone. Ask DTS when you are ready.</td></tr>
+              </tbody>
+            </table>
+          </div>
+          <p>The last line gives your plan, whether you are still getting set up or in ongoing care, and a link to your <a href="reports.html">reports</a>.</p>
+        </section>
+
+        <section class="panel reveal" id="phone">
+          <h2>On a phone</h2>
+          <p>Bedrock works in a phone’s browser. The pages are the same; the figures stack, and the menu opens from the button with three lines at the top left.</p>
+          <figure class="doc-figure doc-figure-narrow">
+            <img src="images/overview-phone.png" alt="The Overview page on a phone" loading="lazy" />
+            <figcaption>The Overview on a phone.</figcaption>
+          </figure>
+        </section>
+      </div>
+    </main>
+    <script src="../../assets/catalog.js"></script><script src="../../assets/nav.js"></script><script src="../../assets/site.js"></script>
+  </body>
+</html>

@@ -1,0 +1,106 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bedrock billing | DTS Dev Docs</title>
+    <meta name="description" content="How to see your Bedrock plan, change the card on file and find invoices in your Bedrock workspace." />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,700&amp;family=Work+Sans:wght@400;500;600;700&amp;display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="../../assets/styles.css" />
+  </head>
+  <body>
+    <div class="site-bg" aria-hidden="true">
+      <div class="glow glow-a"></div><div class="glow glow-b"></div><div class="grid-overlay"></div>
+    </div>
+    <header id="site-header"></header>
+    <main class="page docs-shell">
+      <aside class="docs-nav reveal">
+        <h2>Bedrock</h2>
+        <a href="./">About Bedrock</a>
+        <a href="getting-started.html">Getting started</a>
+        <a href="overview.html">Overview page</a>
+        <a href="performance.html">Performance</a>
+        <a href="staging-server.html">Staging server</a>
+        <a href="incidents.html">Incidents</a>
+        <a href="reports.html">Reports</a>
+        <a href="billing.html">Billing</a>
+        <a href="settings.html">Settings and people</a>
+        <a href="help.html">Questions and help</a>
+        <div class="docs-page-toc">
+          <p class="docs-subnav-label">On This Page</p>
+          <nav class="docs-page-toc-links" data-page-toc aria-label="On this page"></nav>
+        </div>
+      </aside>
+      <div class="docs-main">
+        <section class="panel reveal">
+          <p class="eyebrow">Bedrock</p>
+          <h1>Billing</h1>
+          <p class="panel-intro">The Billing page shows your plan, the card on file, your next payment and every invoice. Payments are handled by Stripe; Bedrock never sees or stores your card number.</p>
+          <figure class="doc-figure">
+            <img src="images/billing.png" alt="The Billing page with Plan, Status, Next payment and Card on file tiles and a list of paid invoices" loading="lazy" />
+            <figcaption>The plan and amounts here are an example. The church, people and figures in these pictures are made up for this guide.</figcaption>
+          </figure>
+        </section>
+
+        <section class="panel reveal" id="tiles">
+          <h2>The four tiles</h2>
+          <div class="table-wrap">
+            <table>
+              <thead><tr><th>Tile</th><th>What it shows</th></tr></thead>
+              <tbody>
+                <tr><td><strong>Plan</strong></td><td>Your Bedrock plan and what it costs each month.</td></tr>
+                <tr><td><strong>Status</strong></td><td><strong>Active</strong> when everything is in order. <strong>Payment past due</strong> or <strong>Unpaid</strong> means a payment did not go through.</td></tr>
+                <tr><td><strong>Next payment</strong></td><td>The date of the next charge. It is always the first of the month.</td></tr>
+                <tr><td><strong>Card on file</strong></td><td>The kind of card, its last four digits and when it expires.</td></tr>
+              </tbody>
+            </table>
+          </div>
+          <p>The note at the bottom of the page says when these figures were last updated from Stripe.</p>
+        </section>
+
+        <section class="panel reveal" id="card">
+          <h2>Changing the card</h2>
+          <ol>
+            <li>Press <strong>Change payment method</strong>. Stripe’s secure billing page opens for your church.</li>
+            <li>Enter the new card and save.</li>
+            <li>Stripe brings you back to Bedrock.</li>
+          </ol>
+          <p><strong>Manage billing</strong> opens the same Stripe page with everything on it: your card, your billing details and your past invoices.</p>
+          <p>Receipts go to the billing email shown under the buttons. To change that address, use <strong>Manage billing</strong> or ask DTS.</p>
+        </section>
+
+        <section class="panel reveal" id="invoices">
+          <h2>Invoices</h2>
+          <p>Every invoice is listed with its number, date, the period it covers, whether it is paid, and the amount.</p>
+          <ul>
+            <li><strong>View</strong> opens Stripe’s page for that invoice.</li>
+            <li><strong>PDF</strong> downloads it.</li>
+          </ul>
+          <p>Your first invoice is usually different from the rest: it covers only the days left in the month you started, plus any one-time setup fee. After that each invoice is one full month.</p>
+        </section>
+
+        <section class="panel reveal" id="failed">
+          <h2>If a payment does not go through</h2>
+          <p>The Status tile turns red and a message says <strong>A payment did not go through</strong>. Press <strong>Change payment method</strong>, update the card, and Stripe tries again. If the card is right and it still fails, contact DTS.</p>
+        </section>
+
+        <section class="panel reveal" id="not-set-up">
+          <h2>If billing is not set up yet</h2>
+          <p>Before your subscription starts, the page has no tiles. If DTS has sent a payment link it says <strong>Finish setting up your plan</strong>, with a <strong>Finish setting up payment</strong> button that opens the <a href="getting-started.html#payment">payment page</a>.</p>
+          <figure class="doc-figure">
+            <img src="images/billing-new.png" alt="The Billing page before a subscription has started, with a Finish setting up payment button" loading="lazy" />
+            <figcaption>Billing for a church that has a payment link waiting.</figcaption>
+          </figure>
+        </section>
+
+        <section class="panel reveal" id="changes">
+          <h2>Changing or cancelling your plan</h2>
+          <p>Talk to your DTS representative. Plans cover different levels of service, so a change is agreed with DTS first and then shows here.</p>
+        </section>
+      </div>
+    </main>
+    <script src="../../assets/catalog.js"></script><script src="../../assets/nav.js"></script><script src="../../assets/site.js"></script>
+  </body>
+</html>

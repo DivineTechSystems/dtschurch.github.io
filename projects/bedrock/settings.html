@@ -1,0 +1,125 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bedrock settings and people | DTS Dev Docs</title>
+    <meta name="description" content="How to change your Bedrock password, invite or remove people at your church, and tell DTS when maintenance suits you." />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,700&amp;family=Work+Sans:wght@400;500;600;700&amp;display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="../../assets/styles.css" />
+  </head>
+  <body>
+    <div class="site-bg" aria-hidden="true">
+      <div class="glow glow-a"></div><div class="glow glow-b"></div><div class="grid-overlay"></div>
+    </div>
+    <header id="site-header"></header>
+    <main class="page docs-shell">
+      <aside class="docs-nav reveal">
+        <h2>Bedrock</h2>
+        <a href="./">About Bedrock</a>
+        <a href="getting-started.html">Getting started</a>
+        <a href="overview.html">Overview page</a>
+        <a href="performance.html">Performance</a>
+        <a href="staging-server.html">Staging server</a>
+        <a href="incidents.html">Incidents</a>
+        <a href="reports.html">Reports</a>
+        <a href="billing.html">Billing</a>
+        <a href="settings.html">Settings and people</a>
+        <a href="help.html">Questions and help</a>
+        <div class="docs-page-toc">
+          <p class="docs-subnav-label">On This Page</p>
+          <nav class="docs-page-toc-links" data-page-toc aria-label="On this page"></nav>
+        </div>
+      </aside>
+      <div class="docs-main">
+        <section class="panel reveal">
+          <p class="eyebrow">Bedrock</p>
+          <h1>Settings and people</h1>
+          <p class="panel-intro">Settings has two tabs. <strong>My account</strong> is about you: your name and password. <strong>Organization</strong> is about your church: its details, who has access, what DTS looks after, and when maintenance suits you.</p>
+        </section>
+
+        <section class="panel reveal" id="account">
+          <h2>My account</h2>
+          <figure class="doc-figure">
+            <img src="images/settings-account.png" alt="The My account tab with Personal details and Change password" loading="lazy" />
+            <figcaption>The church, people and figures in these pictures are made up for this guide.</figcaption>
+          </figure>
+          <h3>Your name</h3>
+          <p>Type your <strong>First name</strong> and <strong>Last name</strong> and press <strong>Save profile</strong>. Your name is shown to the other people at your church and to DTS, for example beside a staging server change you made.</p>
+          <p>Your sign-in email cannot be changed here. Ask DTS.</p>
+          <h3>Your password</h3>
+          <ol>
+            <li>Type your <strong>Current password</strong>.</li>
+            <li>Type the new one in <strong>New password</strong> and <strong>Confirm new password</strong>. Use at least 8 characters, and avoid common passwords and your own name or email.</li>
+            <li>Press <strong>Update password</strong>.</li>
+          </ol>
+          <p>You stay signed in where you are. Anywhere else you were signed in is signed out, and any unused password reset link stops working.</p>
+          <p>If you do not know your current password, ask DTS for a password reset link.</p>
+        </section>
+
+        <section class="panel reveal" id="people">
+          <h2>People with access</h2>
+          <p>On the <strong>Organization</strong> tab, <strong>People with access</strong> lists everyone who can open your church’s workspace. Everyone on the list can see everything, manage the <a href="staging-server.html">staging server</a>, and add or remove people.</p>
+          <figure class="doc-figure doc-figure-narrow">
+            <img src="images/invite-link.png" alt="The People with access card after inviting someone, showing the Invitation ready to send box with the link and a Copy link button" loading="lazy" />
+            <figcaption>After you press Invite, the link appears once. Copy it and send it yourself.</figcaption>
+          </figure>
+          <h3>Inviting someone</h3>
+          <ol>
+            <li>Type their <strong>Email address</strong> and, if you like, their <strong>Name</strong>.</li>
+            <li>Press <strong>Invite</strong>. The box <strong>Invitation ready to send</strong> appears with a link.</li>
+            <li>Press <strong>Copy link</strong> and send it to them yourself, by email or message. <strong>Bedrock does not email it for you.</strong></li>
+            <li>Press <strong>Done</strong>.</li>
+          </ol>
+          <p>The link works once and lasts 7 days. Until they use it, they show in the list as <strong>Invited</strong> with the date the link expires. What they do next is in <a href="getting-started.html#invitation">Getting started</a>.</p>
+          <div class="callout"><p>The link is shown only this one time. If you lose it or it expires, invite the same email address again. That makes a new link and the earlier one stops working.</p></div>
+          <h3>Cancelling an invitation or removing someone</h3>
+          <ul>
+            <li><strong>Cancel invitation</strong> stops a link that has not been used yet.</li>
+            <li><strong>Remove access</strong> takes someone off the list. It takes effect immediately: they are shut out the next time they do anything.</li>
+          </ul>
+          <p>You cannot remove yourself, so a church can never lock itself out. If you are leaving, ask a colleague or DTS to remove you. Review this list whenever someone leaves your staff.</p>
+        </section>
+
+        <section class="panel reveal" id="organization">
+          <h2>Organization details and recorded resources</h2>
+          <p><strong>Organization details</strong> shows your church’s name, website, time zone and plan as DTS has them. Times throughout Bedrock are shown in this time zone. If anything is wrong, ask DTS to correct it.</p>
+          <p><strong>Recorded resources</strong> lists what DTS has on file for you: your website, and the servers, databases and monitoring for each environment. <strong>Recorded</strong> means DTS has it on file; whether it is healthy is on the <a href="overview.html">Overview</a> and <a href="performance.html">Performance</a> pages.</p>
+        </section>
+
+        <section class="panel reveal" id="maintenance">
+          <h2>Maintenance preferences</h2>
+          <p>Planned updates can make your website briefly unavailable. Maintenance preferences tell DTS when that would bother your church least.</p>
+          <figure class="doc-figure doc-figure-narrow">
+            <img src="images/maintenance.png" alt="The Maintenance preferences card showing an accepted preference of Tuesdays at 01:30 and a Request a change button" loading="lazy" />
+            <figcaption>A preference DTS has accepted, with DTS’s reply under it.</figcaption>
+          </figure>
+          <h3>Setting or changing your preference</h3>
+          <ol>
+            <li>Press <strong>Set maintenance preferences</strong>, or <strong>Request a change</strong> if you already have one.</li>
+            <li>Check <strong>Your local time zone</strong>.</li>
+            <li>Choose a <strong>Preferred day</strong>, a <strong>Start time</strong>, and how long the website can be unavailable under <strong>Available time</strong>. If you are not sure, tick <strong>Help us choose a maintenance time</strong> instead.</li>
+            <li>Under <strong>Times we should avoid</strong>, list anything DTS should work around, such as Sunday services, weekday programs or special dates.</li>
+            <li>Press <strong>Share with DTS</strong>.</li>
+          </ol>
+          <figure class="doc-figure doc-figure-narrow">
+            <img src="images/maintenance-form.png" alt="The maintenance preference form with time zone, preferred day, start time, available time and times to avoid" loading="lazy" />
+            <figcaption>The form. A window can run past midnight into the next day.</figcaption>
+          </figure>
+          <h3>What happens after you share it</h3>
+          <ul>
+            <li>It shows as <strong>Awaiting DTS review</strong>. Your existing schedule stays in place meanwhile.</li>
+            <li>DTS either accepts it (<strong>Preference accepted</strong>) or replies asking for a change (<strong>Changes requested</strong>), with a note. Either way it also shows on the Overview under <a href="overview.html#next">What happens next</a>.</li>
+            <li><strong>Currently deployed maintenance schedule</strong> shows the schedule actually in use. Accepting a preference records the agreement; DTS then applies the schedule separately, so the two can differ for a short while.</li>
+            <li><strong>Request and decision history</strong> lists every request and reply.</li>
+          </ul>
+          <div class="callout callout-warm"><p>Times to avoid are read by your DTS team; they do not automatically block maintenance. For a one-off date that matters, such as Easter weekend or a big event, tell DTS directly as well.</p></div>
+          <p>If you see <strong>Your organization manager can update these preferences</strong> instead of a button, your account can read the preference but not change it. Ask a colleague who can, or ask DTS.</p>
+        </section>
+      </div>
+    </main>
+    <script src="../../assets/catalog.js"></script><script src="../../assets/nav.js"></script><script src="../../assets/site.js"></script>
+  </body>
+</html>

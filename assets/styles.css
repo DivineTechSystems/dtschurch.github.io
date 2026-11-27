@@ -962,6 +962,12 @@ details.doc-details .details-body {
   box-shadow: var(--shadow-sm, 0 1px 3px rgba(10, 58, 114, 0.08));
 }
 
+/* A screenshot of one card or a phone screen: keep it near its real size. */
+.doc-figure-narrow img {
+  max-width: 560px;
+  margin: 0 auto;
+}
+
 .doc-figure figcaption {
   margin-top: 0.6rem;
   font-size: 0.85rem;

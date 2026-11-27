@@ -117,6 +117,17 @@ window.DTS_CATALOG = [
     featured: false
   },
   {
+    name: "Bedrock",
+    href: "/projects/bedrock/",
+    group: "Church Guides",
+    desc: "For churches whose Rock site is looked after by DTS. How to use your Bedrock workspace: website status, performance, incidents, monthly reports, billing, and who has access.",
+    badges: ["Client Portal", "Managed Services"],
+    showInNav: true,
+    showInCatalog: true,
+    searchable: true,
+    featured: false
+  },
+  {
     name: "Mailgun Toolbox",
     href: "/projects/mailgun-toolbox/",
     group: "Rock Plugins",

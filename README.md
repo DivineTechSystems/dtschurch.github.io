@@ -7,6 +7,7 @@ DTS development documentation site (GitHub Pages).
 - `projects/serve-system/` - Serve System documentation portal
 - `projects/mailgun-toolbox/` - Mailgun Toolbox documentation portal
 - `projects/mobile-app-settings/` - Mobile App Settings documentation portal
+- `projects/bedrock/` - Bedrock workspace guides for churches (client-facing; nothing about DTS's operator side)
 
 ## Project catalog
 
